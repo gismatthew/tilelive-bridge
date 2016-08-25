@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="center">7.4487,8.5593,6</Parameter>
+  <Parameter name="format">pbf</Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"soil","description":"","fields":{"gid":"Number","objectid":"Number","id":"Number","gridcode":"Number","su_wrb1_ph":"String","shape_leng":"Number","shape_area":"Number"}},{"id":"adm0","description":"","fields":{"gid":"Number","objectid":"Number","gadmid":"Number","iso":"String","name_engli":"String","name_iso":"String","name_fao":"String","name_local":"String","name_obsol":"String","name_varia":"String","name_nonla":"String","name_frenc":"String","name_spani":"String","name_russi":"String","name_arabi":"String","name_chine":"String","waspartof":"String","contains":"String","sovereign":"String","iso2":"String","www":"String","fips":"String","ison":"Number","validfr":"String","validto":"String","andyid":"Number","pop2000":"Number","sqkm":"Number","popsqkm":"Number","unregion1":"String","unregion2":"String","developing":"Number","cis":"Number","transition":"Number","oecd":"Number","wbregion":"String","wbincome":"String","wbdebt":"String","wbother":"String","ceeac":"Number","cemac":"Number","ceplg":"Number","comesa":"Number","eac":"Number","ecowas":"Number","igad":"Number","ioc":"Number","mru":"Number","sacu":"Number","uemoa":"Number","uma":"Number","palop":"Number","parta":"Number","cacm":"Number","eurasec":"Number","agadir":"Number","saarc":"Number","asean":"Number","nafta":"Number","gcc":"Number","csn":"Number","caricom":"Number","eu":"Number","can":"Number","acp":"Number","landlocked":"Number","aosis":"Number","sids":"Number","islands":"Number","ldc":"Number","shape_leng":"Number","shape_le_1":"Number","shape_area":"Number"}},{"id":"adm1","description":"","fields":{"gid":"Number","objectid":"Number","id_0":"Number","iso":"String","name_0":"String","id_1":"Number","name_1":"String","varname_1":"String","nl_name_1":"String","hasc_1":"String","cc_1":"String","type_1":"String","engtype_1":"String","validfr_1":"String","validto_1":"String","remarks_1":"String","shape_leng":"Number","shape_le_1":"Number","shape_area":"Number"}},{"id":"adm2","description":"","fields":{"gid":"Number","objectid":"Number","id_0":"Number","iso":"String","name_0":"String","id_1":"Number","name_1":"String","id_2":"Number","name_2":"String","varname_2":"String","nl_name_2":"String","hasc_2":"String","cc_2":"String","type_2":"String","engtype_2":"String","validfr_2":"String","validto_2":"String","remarks_2":"String","shape_leng":"Number","shape_le_1":"Number","shape_area":"Number"}},{"id":"airport","description":"","fields":{"gid":"Number","objectid":"Number","geonameid":"Number","name":"String","asciiname":"String","alternaten":"String","latitude":"Number","longitude":"Number","feature_cl":"String","feature_co":"String","country_co":"String","cc2":"String","admin1_cod":"String","admin2_cod":"String","admin3_cod":"String","admin4_cod":"String","population":"String","elevation":"String","gtopo30":"String","timezone":"String","modif_date":"String"}},{"id":"lakes","description":"","fields":{"gid":"Number","objectid":"Number","iso":"String","country":"String","f_code_des":"String","hyc_descri":"String","name":"String","shape_leng":"Number","shape_area":"Number"}},{"id":"railway","description":"","fields":{"gid":"Number","objectid":"Number","fid_rail_d":"Number","f_code_des":"String","exs_descri":"String","fco_descri":"String","fid_countr":"Number","iso":"String","isocountry":"String","shape_leng":"Number"}},{"id":"rivers","description":"","fields":{"gid":"Number","objectid":"Number","f_code_des":"String","hyc_descri":"String","nam":"String","iso":"String","name_0":"String","shape_leng":"Number"}},{"id":"roads","description":"","fields":{"gid":"Number","objectid":"Number","med_descri":"String","rtt_descri":"String","f_code_des":"String","iso":"String","isocountry":"String","shape_leng":"Number"}}]}]]></Parameter>
+  <Parameter name="maxzoom">6</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+</Parameters>
+
+
+<Layer name="soil"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_soil]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="adm0"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_adm0]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="adm1"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_adm1]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="adm2"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_adm2]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="airport"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_airport]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="lakes"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_lakes]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="railway"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_railway]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="rivers"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_rivers]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+<Layer name="roads"
+  buffer-size="12"
+  srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
+    
+    <Datasource>
+       <Parameter name="dbname"><![CDATA[soil_db]]></Parameter>
+       <Parameter name="extent"><![CDATA[-180,-85.0511,180,85.0511]]></Parameter>
+       <Parameter name="geometry_field"><![CDATA[]]></Parameter>
+       <Parameter name="geometry_table"><![CDATA[]]></Parameter>
+       <Parameter name="host"><![CDATA[localhost]]></Parameter>
+       <Parameter name="key_field"><![CDATA[]]></Parameter>
+       <Parameter name="key_field_as_attribute"><![CDATA[]]></Parameter>
+       <Parameter name="max_size"><![CDATA[512]]></Parameter>
+       <Parameter name="password"><![CDATA[webgis1]]></Parameter>
+       <Parameter name="port"><![CDATA[5432]]></Parameter>
+       <Parameter name="srid"><![CDATA[]]></Parameter>
+       <Parameter name="table"><![CDATA[nigeria_roads]]></Parameter>
+       <Parameter name="type"><![CDATA[postgis]]></Parameter>
+       <Parameter name="user"><![CDATA[gisuser1]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
